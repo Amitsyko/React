@@ -1,68 +1,67 @@
+
 import React, { useState } from 'react'
 
-export default function TextForm(props) {
 
-    const handleUpClick = () =>
-    {
-        console.log("TransForm UpperCase was clicked")
+export default function TabForm(props) {
+
+    const handleUpChange = () => {
+        // console.log("Handle Up Change");
         let newText = text.toUpperCase();
         setText(newText);
+        props.showAlert("Transform to UpperCase !","success");
     }
 
-    const handleLpClick = () =>
-    {
-        console.log("TransForm LowerCase was clicked");
+    const handleLoChange = () => {
+        // console.log("Handle Up Change");
         let newText = text.toLowerCase();
         setText(newText);
+        props.showAlert("Transform to lowerCase !","success");
     }
 
-    const handleClrChange = () =>
-    {
-        let newText = document.getElementById('myBox');
-        newText.style.color = "yellow";
-        newText.style.background = "Black";
+    const handleClrChange = () => {
+        let newText = document.getElementById("text");
+        newText.style.color = "white";
+        newText.style.background = "#0f5d7a";
         setText(newText.textContent);
-        console.log("Change TextBox BackGround Color");
-        
+        props.showAlert("Transform to Change Color !","success");
     }
 
-    const handleClrOfChange = () =>
-    {
-        let newText = document.getElementById("myBox");
-        newText.style.color ="black";
-        newText.style.background="white";
+    const handleClOfrChange = () => {
+        let newText = document.getElementById("text");
+        newText.style.color = "Black";
+        newText.style.background = "White";
         setText(newText.textContent);
+        props.showAlert("Transform to Hide Color !","success");
     }
 
-    const handleOnChange = (event) =>
-    {
-        console.log("Handle on change");
+    const handleOnChange = (event) => {
+        // console.log("On change");
         setText(event.target.value);
     }
+    const [text, setText] = useState("Enter Your Text Here");
 
-    const [text, setText] = useState('Fill this Box here');
     return (
         <>
-            <div>
-            <h1>{props.heading}</h1>
-                <div className="my-3">
-                    <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+            <div className='container mt-5' style={{color: props.mode==='dark'?'white':'black'}}>
+                <h1>{props.head}</h1>
+                <div className="mb-3">
+                    <label className="form-label">{props.sub}</label>
+                    <textarea id="text" className="form-control" onChange={handleOnChange} value={text} rows="3" style={{backgroundColor: props.mode==='dark'?'grey':'white',color: props.mode==='dark'?'white':'black'}}></textarea>
                 </div>
-                <button type="button" className="btn btn-danger" onClick={handleUpClick}>{props.btn}</button>
-                <button type="button" className="btn btn-success ms-2" onClick={handleLpClick}>Click To LowerCase</button>
-                <button type="button" className="btn btn-secondary ms-2" onClick={handleClrChange}>Change Color</button>
-                <button type="button" className="btn btn-primary ms-2" onClick={handleClrOfChange}>Change Color</button>
+                <button type="button" className="btn btn-warning" onClick={handleUpChange}>Convert to Upper Case</button>
+                <button type="button" className="btn btn-danger ms-1" onClick={handleLoChange}>Convert to Lower Case</button>
+                <button type="button" className="btn btn-info ms-1" onClick={handleClrChange}>Color ON</button>
+                <button type="button" className="btn btn-dark ms-1" onClick={handleClOfrChange}>Color OFF</button>
             </div>
 
-            <div className="container mt-5">
-                <h5>Paramerters</h5>
-                <p>{text.split(" ").length} Words And {text.length} Characters</p>
-                <h5>Reading Time</h5>
+            <div className='container mt-5' style={{color: props.mode==='dark'?'white':'black'}}>
+                <h4>Parameters</h4>
+                <p>{text.split(" ").length} words and {text.length} Characters</p>
                 <p>{0.08 * text.split(" ").length} Minutes to Read</p>
-                <h5>Entered Text to Preview Here</h5>
+                <h3>Preview</h3>
+                {/* <p>{text.length> 0 ? text: "Enter text to Preview Here"}</p> */}
                 <p>{text}</p>
             </div>
         </>
-
     )
 }
