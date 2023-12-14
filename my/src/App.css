@@ -38,12 +38,12 @@
 }
 
 
-.nav-link{
+/* .nav-link{
   color:white;
-}
+} */
 
 .nav-link:hover{
-  color:yellow;
+  color:skyblue;
 }
 
 .form-control{

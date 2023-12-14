@@ -21,7 +21,7 @@ function App() {
       msg: message,
       type: type
     })
-    setTimeout(() => {
+    setTimeout(() => {    
       setAlert(null);
     }, 1500);
   }
@@ -43,11 +43,17 @@ function App() {
         <Navbar title="TextUlties" about="About us" mode={mode} toggleMode={toggleMode} />
         <center><Alert alert={alert} /></center>
 
+
+
+      {/* exact is using for the correct path to render the page :-
+      like -- user --components1
+              user/home --componenets2 */}  
+
         <Routes>
-          <Route path="/about" element={<About about="About us" />}>
+          <Route exact path="/about" element={<About about="About us" />}>
           </Route>
 
-          <Route path="/" element={<TextForm head="This is Text Counter Form" sub="Fill this Form :-" mode={mode} showAlert={showAlert} />}>
+          <Route exact path="/" element={<TextForm head="This is Text Counter Form" sub="Fill this Form :-" mode={mode} showAlert={showAlert} />}>
 
           </Route>
         </Routes>
