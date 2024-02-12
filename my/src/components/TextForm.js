@@ -48,16 +48,16 @@ export default function TabForm(props) {
                     <label className="form-label">{props.sub}</label>
                     <textarea id="text" className="form-control" onChange={handleOnChange} value={text} rows="3" style={{backgroundColor: props.mode==='dark'?'grey':'white',color: props.mode==='dark'?'white':'black'}}></textarea>
                 </div>
-                <button type="button" className="btn btn-warning" onClick={handleUpChange}>Convert to Upper Case</button>
-                <button type="button" className="btn btn-danger ms-1" onClick={handleLoChange}>Convert to Lower Case</button>
-                <button type="button" className="btn btn-info ms-1" onClick={handleClrChange}>Color ON</button>
-                <button type="button" className="btn btn-dark ms-1" onClick={handleClOfrChange}>Color OFF</button>
+                <button type="button" disabled={text.length===0} className="btn btn-warning my-1" onClick={handleUpChange}>Convert to Upper Case</button>
+                <button type="button" disabled={text.length===0} className="btn btn-danger ms-1 my-1" onClick={handleLoChange}>Convert to Lower Case</button>
+                <button type="button" disabled={text.length===0} className="btn btn-info ms-1 my-1" onClick={handleClrChange}>Color ON</button>
+                <button type="button" disabled={text.length===0} className="btn btn-dark ms-1 my-1" onClick={handleClOfrChange}>Color OFF</button>
             </div>
 
             <div className='container mt-5' style={{color: props.mode==='dark'?'white':'black'}}>
                 <h4>Parameters</h4>
-                <p>{text.split(" ").length} words and {text.length} Characters</p>
-                <p>{0.08 * text.split(" ").length} Minutes to Read</p>
+                <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} Characters</p>
+                <p>{0.08 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes to Read</p>
                 <h3>Preview</h3>
                 {/* <p>{text.length> 0 ? text: "Enter text to Preview Here"}</p> */}
                 <p>{text}</p>
