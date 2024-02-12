@@ -62,3 +62,6 @@ function App() {
 }
 
 export default App;
+
+
+// git remote set-url origin https://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@github.com/Amitsyko/React
