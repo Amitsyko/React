@@ -8,48 +8,54 @@ export default class News extends Component {
         console.log("Hello i am constructor");
         this.state = {
             articles: [],
-            loading: false
+            loading: false,
+            page: 1
         }
     }
 
     //Display content API with this method :----
     async componentDidMount() {
         console.log("CDM")
-        let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=1";
+        let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=1&pageSize=20";
         let data = await fetch(url);
         let parsedData = await data.json();
         console.log(parsedData);
-        this.setState({ articles: parsedData.articles })
+        this.setState({ articles: parsedData.articles, totalResults: parsedData.totalResults })
     }
 
-    handlePrevClick = async ()=>{
+    handlePrevClick = async () => {
         console.log("Previous");
 
         console.log("CDM")
-        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=${this.state.page - 1}`;
+        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=${this.state.page - 1}&pageSize=20`;
         let data = await fetch(url);
         let parsedData = await data.json();
         console.log(parsedData);
-        this.setState({ 
+        this.setState({
             page: this.state.page - 1,
-            articles: parsedData.articles 
+            articles: parsedData.articles
         })
     }
 
-    handleNextClick = async ()=>{
+    handleNextClick = async () => {
         console.log("Next");
 
-        console.log("CDM")
-        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=${this.state.page + 1}`;
-        let data = await fetch(url);
-        let parsedData = await data.json();
-        console.log(parsedData);
-        this.setState({ 
-            page: this.state.page + 1,
-            articles: parsedData.articles 
-        })
+        if (this.state.page + 1 > Math.ceil(this.state.totalResults / 20)) {
+
+        } else {
+
+            console.log("CDM")
+            let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=${this.state.page + 1}&pageSize=20`;
+            let data = await fetch(url);
+            let parsedData = await data.json();
+            console.log(parsedData);
+            this.setState({
+                page: this.state.page + 1,
+                articles: parsedData.articles
+            })
+        }
     }
-    
+
 
     render() {
         console.log("Render")
@@ -66,7 +72,7 @@ export default class News extends Component {
                     </div>
                 </div>
                 <div className="container d-flex justify-content-between">
-                    <button disabled={this.state.page<=1}  type="button" className="btn btn-dark" onClick={this.handlePrevClick}> &larr; Previous</button>
+                    <button disabled={this.state.page <= 1} type="button" className="btn btn-dark" onClick={this.handlePrevClick}> &larr; Previous</button>
                     <button type="button" className="btn btn-dark" onClick={this.handleNextClick} >Next &rarr;</button>
                 </div>
             </div>

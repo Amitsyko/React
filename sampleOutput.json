@@ -56,3 +56,247 @@
         }
     ]
 }
+
+
+
+
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "National Epilepsy Week I Neurologist Dr James Butler weighs in - SABC News",
+            "description": "The 13th to the 20th of February marks the National Epilepsy Week. The Neurological Association of South Africa has for the past few years championed causes ...",
+            "url": "https://www.youtube.com/watch?v=RLeIiVx2NDg",
+            "urlToImage": "https://i.ytimg.com/vi/RLeIiVx2NDg/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGCogHCh_MA8=&rs=AOn4CLDC2MATeawMN2E5CN-pQREQRabQow",
+            "publishedAt": "2024-02-12T20:49:16Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Abplive.com"
+            },
+            "author": "ABP News Bureau",
+            "title": "Top Tech News Today: OnePlus 12R Uses UFS 3.1 Storage In All Versions, India Tablet Market Grew In Q4 2023, Led By Apple - ABP Live",
+            "description": "Following discussions on Reddit and X, OnePlus has officially clarified that both the 128GB and 256GB versions of the OnePlus 12R feature UFS 3.1 storage.",
+            "url": "https://news.abplive.com/technology/top-tech-news-today-february-12-oneplus-12r-uses-ufs-3-1-storage-in-all-versions-india-tablet-market-grew-in-q4-2023-led-by-apple-cmr-1664024",
+            "urlToImage": "https://feeds.abplive.com/onecms/images/uploaded-images/2024/02/13/3f828afac031faa8b5da80e319d583e91707769446875295_original.png?impolicy=abp_cdn&imwidth=1200",
+            "publishedAt": "2024-02-12T20:24:26Z",
+            "content": "OnePlus 12R Uses UFS 3.1 Storage In All Versions\r\nDuring the launch event of the OnePlus 12 series, OnePlus stated that the OnePlus 12R would use UFS 4.0 for the 256GB variant, which was also indicat… [+2886 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hindustan Times"
+            },
+            "author": "Reuters",
+            "title": "Explained: What did Trump say about NATO funding and what is Article 5? - Hindustan Times",
+            "description": "Donald Trump said that he would not defend NATO allies who failed to spend enough and defence, sparking a wave of criticism. | World News",
+            "url": "https://www.hindustantimes.com/world-news/explained-what-did-trump-say-about-nato-funding-and-what-is-article-5-101707767805703.html",
+            "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/02/12/1600x900/FILES-US-JUSTICE-POLITICS-TRUMP-0_1707296845412_1707768009350.jpg",
+            "publishedAt": "2024-02-12T20:04:31Z",
+            "content": "Former U.S. President Donald Trump raised a storm of criticism from the White House and top Western officials for suggesting he would not defend NATO allies who failed to spend enough on defence and … [+5249 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hindustan Times"
+            },
+            "author": "HT Correspondent",
+            "title": "Sonia Gandhi may shift to Upper House; party yet to make final call - Hindustan Times",
+            "description": "If Sonia Gandhi settles for Rajya Sabha seat, it would be the first stint in Upper House for the 77-year-old leader, who is a five-term lawmaker of Lok Sabha. | Latest News India",
+            "url": "https://www.hindustantimes.com/india-news/sonia-may-shift-to-upper-house-party-yet-to-make-final-call-101707765220419.html",
+            "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/02/12/1600x900/Congress-party-is-yet-to-make-a-final-decision-on-_1707765211461.jpg",
+            "publishedAt": "2024-02-12T19:13:39Z",
+            "content": "New Delhi: Former Congress president Sonia Gandhi may contest a Rajya Sabha seat, preferably from north India, two senior Congress leaders indicated on Monday, even as they said a final decision woul… [+4110 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Arunachaltimes.in"
+            },
+            "author": null,
+            "title": "Rijiju distributes appointment letters - The Arunachal Times",
+            "description": null,
+            "url": "https://arunachaltimes.in/index.php/2024/02/13/rijiju-distributes-appointment-letters-2/",
+            "urlToImage": null,
+            "publishedAt": "2024-02-12T18:54:58Z",
+            "content": "ITANAGAR, 12 Feb: Union Earth Sciences Minister Kiren Rijiju on Monday distributed appointment letters to 23 youths, who have been recruited into various departments and ministries of the central gov… [+963 chars]"
+        },
+        {
+            "source": {
+                "id": "the-hindu",
+                "name": "The Hindu"
+            },
+            "author": "The Hindu",
+            "title": "Nawaz Sharif, Bilawal Bhutto Zardari in race to become Pakistan’s next PM - The Hindu",
+            "description": null,
+            "url": "https://www.thehindu.com/news/international/pakistan-election-results-pml-n-ppp-discuss-new-power-sharing-formula-to-form-next-government/article67839403.ece",
+            "urlToImage": null,
+            "publishedAt": "2024-02-12T17:00:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NDTV News"
+            },
+            "author": null,
+            "title": "Prospect Of Full Israeli Incursion Into Gaza's Rafah \"Terrifying\": UN - NDTV",
+            "description": "The United Nations said Monday the prospect of a full Israeli incursion into the crammed Gaza town of Rafah was \"terrifying\" and risked an \"extremely high\" number of casualties.",
+            "url": "https://www.ndtv.com/world-news/prospect-of-full-israeli-incursion-into-gazas-rafah-terrifying-un-5045378",
+            "urlToImage": "https://c.ndtvimg.com/2024-02/r4fd2qug_rafah_625x300_12_February_24.jpeg?ver-20240117.06",
+            "publishedAt": "2024-02-12T16:36:26Z",
+            "content": "The Gaza war broke out after Hamas launched an unprecedented attack on Israel on October 7\r\nGeneva, Switzerland: The United Nations said Monday the prospect of a full Israeli incursion into the cramm… [+2470 chars]"
+        },
+        {
+            "source": {
+                "id": "the-hindu",
+                "name": "The Hindu"
+            },
+            "author": "The Hindu",
+            "title": "Jailed Tamil Nadu Minister Senthilbalaji resigns from Cabinet - The Hindu",
+            "description": null,
+            "url": "https://www.thehindu.com/news/national/tamil-nadu/jailed-tamil-nadu-minister-senthilbalaji-resigns-from-cabinet/article67839455.ece",
+            "urlToImage": null,
+            "publishedAt": "2024-02-12T16:33:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Qatar frees eight ex-Indian navy officers previously on death row - BBC.com",
+            "description": "The Indian foreign ministry says seven of the men have already returned to India.",
+            "url": "https://www.bbc.com/news/world-asia-68271170",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/E67A/production/_132620095_gettyimages-1161688692.jpg",
+            "publishedAt": "2024-02-12T16:27:57Z",
+            "content": "The eight former Indian naval officers were previously sentenced to death on unspecified charges\r\nA Qatari court has released eight former Indian naval officers previously on death row for unspecifie… [+1592 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Business Standard"
+            },
+            "author": "Asit Ranjan Mishra",
+            "title": "No review of action on Paytm Payments Bank: RBI governor Shaktikanta Das - Business Standard",
+            "description": "Paytm Payments Bank: Says the decision was made after a thorough evaluation of its operations",
+            "url": "https://www.business-standard.com/companies/news/no-review-of-action-against-paytm-payments-bank-says-rbi-governor-das-124021201470_1.html",
+            "urlToImage": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-02/12/full/1707759246-4002.jpg",
+            "publishedAt": "2024-02-12T16:06:56Z",
+            "content": "RBI governor says decision follows full evaluation of the firm's ops\r\nFinance Minister Nirmala Sitharaman and RBI Governor Shaktikanta Das arrive for a customary post-Budget meeting with the central … [+3191 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Earth.com"
+            },
+            "author": null,
+            "title": "NOAA alert: Auroras expected in the US this week from strong solar flares - Earth.com",
+            "description": "According to the NOAA, there will be increased aurora activity over the next few days in Canada and the northern and Midwest U.S. states.",
+            "url": "https://www.earth.com/news/noaa-alert-auroras-expected-in-the-us-this-week-from-strong-solar-flares/",
+            "urlToImage": "https://cff2.earth.com/uploads/2024/02/12081640/aurora-alert_solar-storm_aurora-activity-US_1m.jpg",
+            "publishedAt": "2024-02-12T15:31:01Z",
+            "content": "The sun has been exhibiting heightened levels of activity, marked by a series of solar flares and coronal mass ejections (CMEs) that have captured the attention of astronomers and space weather forec… [+5264 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Planetary Society"
+            },
+            "author": null,
+            "title": "The best places to search for life in our Solar System - The Planetary Society",
+            "description": "From Earth's neighboring planets to distant moons, these are the best places to look for alien life.",
+            "url": "https://www.planetary.org/articles/the-best-places-to-search-for-life-in-our-solar-system",
+            "urlToImage": "https://planetary.s3.amazonaws.com/web/assets/pictures/_1200x630_crop_center-center_82_none/enceladus-plumes-cassini.jpg?mtime=1649416180",
+            "publishedAt": "2024-02-12T15:20:47Z",
+            "content": "Europas subsurface oceans are thought to contain twice as much water as all of Earths oceans combined. Measurements of the moons magnetic field also hinted that this water might be salty, suggesting … [+1643 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Thewire.in"
+            },
+            "author": null,
+            "title": "Nitish Kumar May Have Won Trust Vote, but Tejashwi Yadav Emerges as Real Winner - The Wire",
+            "description": "Unlike Nitish Kumar who was bitter and unimpressive during his no-confidence motion speech, Tejashwi Yadav's composure with no inkling of ill-will won many hearts.",
+            "url": "https://thewire.in/politics/nitish-kumar-may-have-won-trust-vote-but-tejashwi-yadav-emerges-as-real-victor",
+            "urlToImage": "https://cdn.thewire.in/wp-content/uploads/2023/10/30172607/F6h-A1CXQAAeurW-800x400.jpeg",
+            "publishedAt": "2024-02-12T14:59:38Z",
+            "content": "Patna: Two weeks after returning to the Bharatiya Janata Party (BJP) fold, the Nitish Kumar-led National Democratic Alliance (NDA) government won the trust vote by 129:0 amidst the walkout from the O… [+6443 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Rediff.com"
+            },
+            "author": "PTI",
+            "title": "Kohli's absence gives England an edge in Test series - Rediff.com",
+            "description": "'...Virat adds to the quality of any contest because he is such a wonderful player who brings fire, passion, competitiveness and great fan following to the sport. But personal matters always take preference over cricketing matters.'",
+            "url": "https://www.rediff.com/cricket/report/kohlis-absence-gives-england-an-edge-in-test-series-england-tour-india-pix-2024/20240212.htm",
+            "urlToImage": "https://im.rediff.com/cricket/2021/oct/14anderson-kohli.jpg",
+            "publishedAt": "2024-02-12T11:39:02Z",
+            "content": "'...Virat adds to the quality of any contest because he is such a wonderful player who brings fire, passion, competitiveness and great fan following to the sport. But personal matters always take pre… [+4859 chars]"
+        },
+        {
+            "source": {
+                "id": "the-times-of-india",
+                "name": "The Times of India"
+            },
+            "author": "TIMESOFINDIA.COM",
+            "title": "8.7 Lakh Achieve US Citizenship! Who topped the list? India emerges as key contributor in record surge - Times of India",
+            "description": "In fiscal year 2023, close to 8.7 lakh foreign nationals successfully acquired US citizenship, slightly lower than the previous year's count of 9.7 lakh new American citizens. Among the newly naturalized citizens, over 1.1 lakh Mexicans (12.7% of the",
+            "url": "https://timesofindia.indiatimes.com/videos/toi-original/8-7-lakh-achieve-us-citizenship-who-topped-the-list-india-emerges-as-key-contributor-in-record-surge/videoshow/107629105.cms",
+            "urlToImage": "https://timesofindia.indiatimes.com/photo/msid-107629105,imgsize-90690.cms",
+            "publishedAt": "2024-02-12T10:52:10Z",
+            "content": "Feb 12, 2024, 04:22PM ISTSource: TOI.inIn fiscal year 2023, close to 8.7 lakh foreign nationals successfully acquired US citizenship, slightly lower than the previous year's count of 9.7 lakh new Ame… [+1187 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Financial Express"
+            },
+            "author": null,
+            "title": "Redmi Buds 5 launched; affordable earbuds bring big sound, hybrid noise cancellation for less than Rs 3,000 - The Financial Express",
+            "description": "Redmi Buds 5 earbuds price in India is set at Rs 2,999. General availability is pegged for February 20.",
+            "url": "https://www.financialexpress.com/life/technology-redmi-buds-5-launched-affordable-earbuds-bring-big-sound-hybrid-noise-cancellation-for-less-than-rs-3000-3391733/",
+            "urlToImage": "https://www.financialexpress.com/wp-content/uploads/2024/02/Redmi-Buds-5.jpg",
+            "publishedAt": "2024-02-12T09:14:36Z",
+            "content": "Xiaomi launched Redmi Buds 5 wireless earbuds in India today. The affordable TWS from the house of Xiaomi pack 12.4mm dynamic drivers, hybrid noise cancellation, and up to 38 hours battery life with … [+1428 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Onmanorama.com"
+            },
+            "author": "Onmanorama Staff",
+            "title": "Singer Aditya Narayan hits fan with mike, throws his phone away during concert | Onmanorama - Onmanorama",
+            "description": "A video capturing the incident has circulated widely on social media, showing Aditya abruptly halting his performance and throwing a fan's phone away from the stage.",
+            "url": "https://www.onmanorama.com/entertainment/entertainment-news/2024/02/12/singer-aditya-narayan-throws-fan-phone-viral-video.html",
+            "urlToImage": "https://img.onmanorama.com/content/dam/mm/en/entertainment/entertainment-news/images/2024/2/12/aditya-narayan.jpg",
+            "publishedAt": "2024-02-12T08:44:56Z",
+            "content": "Singer Aditya Narayan sparked controversy at his concert in Chhattisgarh when he lost his temper with a fan. A video capturing the incident has circulated widely on social media, showing Aditya abrup… [+878 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hindustan Times"
+            },
+            "author": "HT Tech",
+            "title": "Valentine's Day gift: From iPhone 15 Pro to Poco X6, check out huge discounts on Amazon - HT Tech",
+            "description": "The last-minute Valentine's Day gift ideas, grab massive discounts on top smartphones such as iPhone 15 Pro, iPhone 15, Poco X6, and more.",
+            "url": "https://tech.hindustantimes.com/mobile/news/valentines-day-gift-from-iphone-15-pro-to-poco-x6-check-out-huge-discounts-on-amazon-71707725634803.html",
+            "urlToImage": "https://images.hindustantimes.com/tech/img/2024/02/12/1600x900/2_1703833695683_1707725936145.jpeg",
+            "publishedAt": "2024-02-12T08:28:36Z",
+            "content": "Valentine's Day gift: Valentine's Day is just two days away which means you just have a few hours to buy a memorable gift for your loved one. If you are someone who's looking for some special gifts t… [+5172 chars]"
+        }
+    ]
+}
