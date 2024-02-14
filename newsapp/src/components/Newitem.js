@@ -8,7 +8,7 @@ export default class Newitem extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
-              <div className="card" style={{ width: "18rem" }}>
+              <div className="card" style={{ width: "20rem" }}>
                 <img src={!imageUrl?"https://cdn.ndtv.com/common/images/ogndtv.png":imageUrl} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{title}...</h5>
