@@ -3,88 +3,72 @@ import Newitem from './Newitem'
 
 export default class News extends Component {
 
-    articles = [
-        {
-            "source": {
-                "id": "news-com-au",
-                "name": "News.com.au"
-            },
-            "author": "Andrew McMurtry",
-            "title": "‘Alien’: Maxwell ‘madness’ blows cricket away",
-            "description": "Glenn Maxwell has blasted the fastest T20 international century in Australia in an absolutely scintillating knock at Adelaide Oval.",
-            "url": "https://www.news.com.au/sport/cricket/alien-glenn-maxwell-rewrites-record-books-all-over-again/news-story/8e89d86ea205ece370ee0c98c0b683f2",
-            "urlToImage": "https://content.api.news/v3/images/bin/48db96763fffb2be6a1d2f21136529b9",
-            "publishedAt": "2024-02-11T10:07:00Z",
-            "content": "Glenn Maxwell has blasted the fastest T20 international century in Australia in an absolutely scintillating knock at Adelaide Oval.\r\nMaxwell has moved to the top of the leaderboard of T20I centuries,… [+1905 chars]"
-        },
-        {
-            "source": {
-                "id": "al-jazeera-english",
-                "name": "Al Jazeera English"
-            },
-            "author": "Manasi Pathak",
-            "title": "LIVE: India vs Australia – ICC Under-19 Cricket World Cup final",
-            "description": "Follow our build-up, team news and commentary as India face Australia in the final of the ICC Under-19 World Cup.",
-            "url": "https://www.aljazeera.com/sports/liveblog/2024/2/11/live-india-vs-australia-under-19-cricket-world-cup-final-score-commentary-runs-wicket",
-            "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2024/02/Uday-Saharan-of-India-celebrates-following-the-ICC-U19-Mens-Cricket-World-Cup-South-Africa-2024-Semi-Final-match-between-India-and-South-Africa-at-Willowmoore-Park-on-February-06-2024-in-Benoni-South-Africa-1707235848.jpeg?resize=1920%2C1440",
-            "publishedAt": "2024-02-11T06:34:54Z",
-            "content": "blinking-dot\r\nLive updatesLive updates, \r\nFollow our build-up, team news and commentary as India face Australia in the final of the ICC Under-19 World Cup."
-        },
-        {
-            "source": {
-                "id": "espn-cric-info",
-                "name": "ESPN Cric Info"
-            },
-            "author": null,
-            "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
-            "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
-            "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
-            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
-            "publishedAt": "2020-04-27T11:41:47Z",
-            "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
-        },
-        {
-            "source": {
-                "id": "espn-cric-info",
-                "name": "ESPN Cric Info"
-            },
-            "author": null,
-            "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
-            "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
-            "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
-            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
-            "publishedAt": "2020-03-30T15:26:05Z",
-            "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
-        }
-    ]
-
-    constructor(){
+    constructor() {
         super();
         console.log("Hello i am constructor");
         this.state = {
-            articles: this.articles,
+            articles: [],
             loading: false
         }
     }
+
+    //Display content API with this method :----
+    async componentDidMount() {
+        console.log("CDM")
+        let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=1";
+        let data = await fetch(url);
+        let parsedData = await data.json();
+        console.log(parsedData);
+        this.setState({ articles: parsedData.articles })
+    }
+
+    handlePrevClick = async ()=>{
+        console.log("Previous");
+
+        console.log("CDM")
+        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=${this.state.page - 1}`;
+        let data = await fetch(url);
+        let parsedData = await data.json();
+        console.log(parsedData);
+        this.setState({ 
+            page: this.state.page - 1,
+            articles: parsedData.articles 
+        })
+    }
+
+    handleNextClick = async ()=>{
+        console.log("Next");
+
+        console.log("CDM")
+        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=a924b902923447fdb68207df99a8f2fc&page=${this.state.page + 1}`;
+        let data = await fetch(url);
+        let parsedData = await data.json();
+        console.log(parsedData);
+        this.setState({ 
+            page: this.state.page + 1,
+            articles: parsedData.articles 
+        })
+    }
+    
+
     render() {
+        console.log("Render")
         return (
-            <div>   
+            <div>
                 <div className="container my-3">
-                <h2>NewzWorld - Top HeadLines</h2>
+                    <h2>NewzWorld - Top HeadLines</h2>
                     <div className="row my-5">
-                        <div className="col-md-4">
-                            <Newitem title="myTitle" description="myDes" imageUrl="https://content.api.news/v3/images/bin/48db96763fffb2be6a1d2f21136529b9" />
-                        </div>
-                        <div className="col-md-4">
-                            <Newitem title="myTitle" description="myDes" />
-                        </div>
-                        <div className="col-md-4">
-                            <Newitem title="myTitle" description="myDes" />
-                        </div>
+                        {this.state.articles.map((element) => {
+                            return <div className="col-md-4" key={element.url}>
+                                <Newitem title={element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 88) : ""} imageUrl={element.urlToImage} newsUrl={element.url} />
+                            </div>
+                        })}
                     </div>
                 </div>
-
-
+                <div className="container d-flex justify-content-between">
+                    <button disabled={this.state.page<=1}  type="button" className="btn btn-dark" onClick={this.handlePrevClick}> &larr; Previous</button>
+                    <button type="button" className="btn btn-dark" onClick={this.handleNextClick} >Next &rarr;</button>
+                </div>
             </div>
         )
     }
