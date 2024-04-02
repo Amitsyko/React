@@ -22,6 +22,7 @@ export default class App extends Component {
 
   render() {
     return (
+
       <>
         <div>
           <BrowserRouter>
@@ -43,6 +44,7 @@ export default class App extends Component {
         </div>
         <ScrollToTop smooth />
       </>
+      
     )
   }
 }

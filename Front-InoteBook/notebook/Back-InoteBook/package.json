@@ -1,0 +1,19 @@
+{
+  "name": "back-inotebook",
+  "version": "1.0.0",
+  "description": "InoteBook - This is the cloudNoteBook App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
