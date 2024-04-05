@@ -1,0 +1,18 @@
+.navbar-brand{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: rgb(255, 247, 214);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+.nav-link:focus{
+    color: rgb(255, 229, 124) !important;
+}
