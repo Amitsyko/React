@@ -1,16 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditNoteIcon from '@mui/icons-material/EditNote';
+import noteContext from "../context/notes/noteContext"
 
 export default function Noteitem(props) {
-    const { note } = props;
+    const context = useContext(noteContext);
+    const {deleteNote} = context;
+    const { note, updateNote } = props;
     return (
-      
-            <div class="card col-3 mx-3 my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">{note.title}</h5>
-                        <p class="card-text">{note.description}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div className='col-md-3'>
+            <div className="card my-3">
+                <div className="card-body">
+                    <div className='d-flex'>
+                        <h5 className="card-title">{note.title}</h5>
+                        <div className="icon mx-auto">
+                            <DeleteIcon className='mx-2' onClick={() =>{deleteNote(note._id)}}/>
+                            <EditNoteIcon className='mx-2' onClick={() => {updateNote(note)}}/>
+                        </div>
                     </div>
+                    <p className="card-text">{note.description}</p>
+                    <h6><span className="badge text-bg-success">{note.tag}</span></h6>
+                </div>
             </div>
-        
+        </div>
     )
 }
