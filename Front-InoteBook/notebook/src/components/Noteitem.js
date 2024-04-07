@@ -14,7 +14,7 @@ export default function Noteitem(props) {
                     <div className='d-flex'>
                         <h5 className="card-title">{note.title}</h5>
                         <div className="icon mx-auto">
-                            <DeleteIcon className='mx-2' onClick={() =>{deleteNote(note._id)}}/>
+                            <DeleteIcon className='mx-2' onClick={() =>{deleteNote(note._id); props.showAlert("Note Deleted SuccessFully", "success")}}/>
                             <EditNoteIcon className='mx-2' onClick={() => {updateNote(note)}}/>
                         </div>
                     </div>

@@ -43,10 +43,10 @@ router.post("/createuser", [
         }
 
         const authtoken = jwt.sign(data, JWT_SECRET);
+        success = true;
         // console.log(jwtData);
-
         // res.status(201).json(user)
-        res.json({ authtoken })
+        res.json({ success, authtoken })
     } catch (error) {
         console.error(error.message);
         res.status(500).send("Internal Server Error");
@@ -61,7 +61,7 @@ router.post("/login", [
     body('email', 'Enter a Vaild Email').isEmail(),
     body('password', 'Password not be blank').exists(),
 ], async (req, res) => {
-
+    let success = false;
     //if there are errors, return bad request and the errors--
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -73,12 +73,14 @@ router.post("/login", [
         //if Email is not match then they show this error--
         let user = await User.findOne({ email });
         if (!user) {
-            return res.status(400).json({ error: "Please try again with the correct creditionals" });
+            success = false
+            return res.status(400).json({success, error: "Please try again with the correct creditionals" });
         }
         //if Password is not match then they show this error--
         const passwordCompare = await bcrypt.compare(password, user.password);
         if (!passwordCompare) {
-            return res.status(400).json({ error: "Please try again with the correct creditionals" });
+            success = false
+            return res.status(400).json({ success, error: "Please try again with the correct creditionals" });
         }
 
         //if Email and Password is match then they give me the Auth Token--
@@ -89,7 +91,8 @@ router.post("/login", [
         }
 
         const authtoken = jwt.sign(data, JWT_SECRET);
-        res.json({ authtoken })
+        success = true;
+        res.json({ success, authtoken })
 
     //If My Code is the Problamtic they they show me this error--
     } catch (error) {
