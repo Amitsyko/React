@@ -1,0 +1,192 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "INoteBook",
+    "dateExported": "2024-04-06T10:12:27.958Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "9dd31c2e-89e8-40af-8345-ed8c0d132dcd",
+            "name": "Authentication",
+            "containerId": "",
+            "created": "2024-04-06T06:37:33.576Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9a562549-c406-4168-b06f-4d6ac6e3e41a",
+            "name": "Notes",
+            "containerId": "",
+            "created": "2024-04-06T06:50:27.326Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ed6ad027-b391-4934-9d9a-198d99f13fc9",
+            "colId": "21fbeb7f-21bd-4a80-95af-72b57aa08faf",
+            "containerId": "9dd31c2e-89e8-40af-8345-ed8c0d132dcd",
+            "name": "Create a new User",
+            "url": "http://localhost:8000/api/auth/createuser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-06T06:39:22.126Z",
+            "modified": "2024-04-06T06:41:00.124Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Amit Vishwakarma\",\n  \"email\": \"vishamit8827@gmail.com\",\n  \"password\": \"amit@7974\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "453315e5-230e-4e33-936b-09b376559552",
+            "colId": "21fbeb7f-21bd-4a80-95af-72b57aa08faf",
+            "containerId": "9dd31c2e-89e8-40af-8345-ed8c0d132dcd",
+            "name": "Login User",
+            "url": "http://localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-06T06:44:28.175Z",
+            "modified": "2024-04-06T06:47:21.756Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"vishamit8827@gmail.com\",\n  \"password\": \"amit@7974\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d17d15f0-bb09-406a-bb0b-40ce936b17f0",
+            "colId": "21fbeb7f-21bd-4a80-95af-72b57aa08faf",
+            "containerId": "9dd31c2e-89e8-40af-8345-ed8c0d132dcd",
+            "name": "Fetch User",
+            "url": "http://localhost:8000/api/auth/getuser",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-04-06T06:47:54.790Z",
+            "modified": "2024-04-06T06:50:06.044Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjYxMGVlN2M5YTc2MDlkZjc4MDk5ZTQzIn0sImlhdCI6MTcxMjM4NjA0MX0.-2VQ32qMgdSYHqjGCrpAJ5jDDNMEbmC9LZmusU5oI2k"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d517cbf9-67f2-486e-ac32-f6c49ec35427",
+            "colId": "21fbeb7f-21bd-4a80-95af-72b57aa08faf",
+            "containerId": "9a562549-c406-4168-b06f-4d6ac6e3e41a",
+            "name": "Add Note",
+            "url": "http://localhost:8000/api/notes/addnote",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-06T06:54:26.933Z",
+            "modified": "2024-04-06T07:13:26.426Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjYxMGVlN2M5YTc2MDlkZjc4MDk5ZTQzIn0sImlhdCI6MTcxMjM4Njg1NX0.fUd_yoWPGgDR4EWHo1eXKCq1VAxjPKzex90m-iz0Moo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Savita Rani\",\n  \"description\": \"Hey I am Savita Rani and i am working women\",\n  \"tag\": \"Self Employee\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7042b30a-60d6-45b6-a02f-021a348feb66",
+            "colId": "21fbeb7f-21bd-4a80-95af-72b57aa08faf",
+            "containerId": "9a562549-c406-4168-b06f-4d6ac6e3e41a",
+            "name": "Fetch Notes User",
+            "url": "http://localhost:8000/api/notes/fetchallnotes",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-06T07:05:58.362Z",
+            "modified": "2024-04-06T07:08:21.470Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjYxMGVlN2M5YTc2MDlkZjc4MDk5ZTQzIn0sImlhdCI6MTcxMjM4Njg1NX0.fUd_yoWPGgDR4EWHo1eXKCq1VAxjPKzex90m-iz0Moo"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6273ae84-167c-48ca-8cbb-676f696774f2",
+            "colId": "21fbeb7f-21bd-4a80-95af-72b57aa08faf",
+            "containerId": "9a562549-c406-4168-b06f-4d6ac6e3e41a",
+            "name": "Update Note",
+            "url": "http://localhost:8000/api/notes/updatenote/6610f438d54799a0b7b0b9be",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-04-06T07:09:34.698Z",
+            "modified": "2024-04-06T07:15:49.592Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjYxMGVlN2M5YTc2MDlkZjc4MDk5ZTQzIn0sImlhdCI6MTcxMjM4Njg1NX0.fUd_yoWPGgDR4EWHo1eXKCq1VAxjPKzex90m-iz0Moo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Shaktiman\",\n  \"description\": \"In our childHood our super hero is Shaktiman\",\n  \"tag\": \"Shaktiman\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ac73a7c-8a28-4976-8ccc-c61b2b2f8606",
+            "colId": "21fbeb7f-21bd-4a80-95af-72b57aa08faf",
+            "containerId": "9a562549-c406-4168-b06f-4d6ac6e3e41a",
+            "name": "Delete Note",
+            "url": "http://localhost:8000/api/notes/deletenotes/6610f438d54799a0b7b0b9be",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-04-06T07:16:44.730Z",
+            "modified": "2024-04-06T07:20:10.672Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjYxMGVlN2M5YTc2MDlkZjc4MDk5ZTQzIn0sImlhdCI6MTcxMjM4Njg1NX0.fUd_yoWPGgDR4EWHo1eXKCq1VAxjPKzex90m-iz0Moo"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
