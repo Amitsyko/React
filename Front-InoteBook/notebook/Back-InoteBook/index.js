@@ -10,6 +10,7 @@ const port = 8000
 
 app.use(cors())
 
+//----This is important beacuse we can not define then they throw the api error name is not define and all-----
 app.use(express.json());
 
 //Available Routes-
